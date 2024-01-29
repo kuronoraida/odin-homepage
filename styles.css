@@ -46,6 +46,7 @@ table {
 /* theme */
 body {
     font-family: 'Roboto';
+    background-color: whitesmoke;
 }
 
 header, main, footer {
@@ -85,13 +86,65 @@ p {
     color: white;
 }
 
+.text-shadow {
+    text-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.box-shadow {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
 header {
-    background-color: #0891b2;
     padding: 48px 64px;
+    position: relative;
+}
+
+header .background {
+    background-color: #0891b2;
+    width: 200%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    transform: rotate(-10deg);
+    transform-origin: bottom left;
+}
+
+header .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+header .portrait {
+    position: relative;
+    background-color: green;
+    flex: 0.8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header .portrait img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+header .portrait h1 {
+    position: absolute;
+    bottom: 0px;
+}
+
+header .info {
+    background-color: white;
+    flex: 1;
+    padding: 48px 16px;
 }
 
 main {
-    background-color: whitesmoke;
     padding: 48px 64px;
 }
 
@@ -105,7 +158,6 @@ main {
 .card {
     background-color: white;
     width: 250px;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .card img {
