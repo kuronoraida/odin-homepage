@@ -209,7 +209,3 @@ footer .container {
     flex-direction: row;
     gap: 16px;
 }
-
-footer .container div {
-    flex: 1
-}
