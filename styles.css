@@ -44,3 +44,68 @@ table {
 }
 
 /* theme */
+body {
+    font-family: 'Roboto';
+}
+
+header, main, footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    max-width: 800px;
+    width: 100%;
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display';
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 8px;
+}
+
+.white {
+    color: white;
+}
+
+header {
+    background-color: #0891b2;
+    padding: 48px 64px;
+}
+
+main {
+    background-color: whitesmoke;
+    padding: 48px 64px;
+}
+
+main .grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 28px;
+    justify-content: space-between;
+}
+
+main .grid .card {
+    background-color: white;
+    width: 245px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+footer {
+    background-color: #0891b2;
+    padding: 48px 64px;
+}
+
+footer .container {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
