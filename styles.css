@@ -66,19 +66,20 @@ h1, h2, h3 {
 
 h1 {
     font-size: 2.5em;
-    margin-bottom: 0.5em;
+    margin-bottom: 0.75em;
 }
 
 h2 {
     font-size: 2em;
-    margin-bottom: 0.5em;
+    margin-bottom: 0.75em;
 }
 
 h3 {
-    margin-bottom: 0.5em;
+    margin-bottom: 0.75em;
 }
 
 p {
+    margin-bottom: 1em;
     color: darkslategray;
 }
 
@@ -92,6 +93,29 @@ p {
 
 .box-shadow {
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    gap: 16px;
+}
+
+.flex-end {
+    justify-content: end;
+}
+
+.flex-0 {
+    flex: 0;
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+.flex-margin-auto {
+    margin-right: auto;
 }
 
 header {
@@ -184,4 +208,8 @@ footer .container {
     display: flex;
     flex-direction: row;
     gap: 16px;
+}
+
+footer .container div {
+    flex: 1
 }
