@@ -106,12 +106,8 @@ p {
     justify-content: end;
 }
 
-.flex-0 {
-    flex: 0;
-}
-
 .flex-1 {
-    flex: 1;
+    flex: 1 1 auto;
 }
 
 .flex-margin-auto {
@@ -209,7 +205,12 @@ footer {
 footer .container {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     gap: 16px;
+}
+
+footer picture {
+    width: 50%;
 }
 
 @media (max-width: 500px) {
@@ -227,5 +228,9 @@ footer .container {
 
     footer .container {
         flex-direction: column;
+    }
+    
+    footer picture {
+        width: 100%;
     }
 }
