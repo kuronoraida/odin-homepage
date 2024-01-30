@@ -214,6 +214,29 @@ footer picture {
 }
 
 @media (max-width: 500px) {
+    header {
+        padding: 32px 16px;
+    }
+
+    header .container {
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    header .portrait {
+        width: 100%;
+    }
+
+    header .info {
+        box-shadow: none;
+        background: none;
+        padding: 0px;
+    }
+
+    header .background {
+        translate: 0px -400px;
+    }
+
     main {
         padding: 32px 16px;
     }
@@ -229,7 +252,7 @@ footer picture {
     footer .container {
         flex-direction: column;
     }
-    
+
     footer picture {
         width: 100%;
     }
