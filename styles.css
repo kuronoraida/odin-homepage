@@ -47,6 +47,11 @@ table {
 body {
     font-family: 'Roboto';
     background-color: whitesmoke;
+    
+}
+
+a {
+    color: #0891b2;
 }
 
 header, main, footer {
@@ -157,6 +162,7 @@ header .portrait img {
 
 header .portrait h1 {
     position: absolute;
+    text-align: center;
     bottom: 0px;
 }
 
